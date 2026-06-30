@@ -138,10 +138,9 @@ http://127.0.0.1:5000
 Add screenshots of your application here.
 
 * Dashboard (Light Theme)
+<img width="1897" height="972" alt="light_theme" src="https://github.com/user-attachments/assets/02eda1eb-4e0b-4385-9a53-1c3039187b63" />
 * Dashboard (Dark Theme)
-* Cryptocurrency Search
-* Price Trend Chart
-* Top 10 Cryptocurrencies
+<img width="1917" height="976" alt="dark_theme" src="https://github.com/user-attachments/assets/e78800fa-8c03-4f7c-baef-d5d3a3170951" />
 
 ---
 
