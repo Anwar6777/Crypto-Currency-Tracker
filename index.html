@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypt Currency Tracker</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./javascript/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./assets/icons/trading.png" width="40px" height="40px" alt="Crypto Market Logo">
+        <label id="title">Crypto</label>
+        <label id="title2"> Tracker</label>
+        <label id="live">Live Data</label>
+        <label id="last_update">Last Updated: 10:24:30 AM</label>
+        <div class="theme-selecter" id="themediv">
+            <button id="theme_button"><img id="theme_img" width="25px" src="./assets/icons/sun.png" alt=""></button>
+        </div>
+    </header>
+    <div class="main">
+        <div class="left-pannel">
+            <div class="top">
+                <div class="container">
+                    <img width="25px" src="./assets/icons/home.png" alt="Home">
+                    <button id="Dashboard">Dashboard</button>
+                </div>
+                <div class="container">
+                    <img width="25px" src="./assets/icons/fire.png" alt="Fire">
+                    <button id="Trending">Trending</button>
+                </div>
+                <div class="container" id="Top Coins" >
+                    <img width="25px" src="./assets/icons/trophy.png" alt="Trophy">
+                    <button >Top Coins</button>
+                </div>
+                <div class="container">
+                    <img width="25px" src="./assets/icons/star.png" alt="Star">
+                    <button id="Watchlist">Watchlist</button>
+                </div>
+                <div class="container">
+                    <img width="25px" src="./assets/icons/about.png" alt="About">
+                    <button id="About">About</button>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="div">
+                    <label >Market Overview</label>
+                    <img id="graph2" width="200px" height="80px" src="./assets/icons/light_graph.png" alt="">
+                </div>
+                <div class="div">
+                    <label>Market Cap</label>
+                    <div class="data">
+                        <label id="btm_market-cap">$2.45T</label>
+                        <label id="market-percentage">+2.35%</label>
+                    </div>
+                </div>
+                <div class="div">
+                    <label>24h Volume</label>
+                    <div class="data">
+                        <label id="btm-volume">$298.67B</label>
+                        <label id="volume-percentage">-1.02%</label>
+                    </div>
+                </div>
+                <div class="div">
+                    <label>Coin Dominance</label>
+                    <div class="data">
+                        <label id="Dominance">52.31%</label>
+                        <label id="Dominance-percentage">+0.35%</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-pannel">
+            <div class="search-bar">
+                <img id="search-img" src="./assets/icons/black_search.png" alt="Search Icon">
+                <input type="text" class="search-box" id="search-inp" placeholder="Search cryptocurrency (e.g., Bitcoin, Ethereum, Dogecoin...)">
+                <button id="search-button">Search</button>
+            </div>
+            <div class="middle">
+                <div class="info">
+                    <div class="top-head">
+                        <img id="coin-img" src="./assets/icons/bitcoin.png" alt="">
+                        <label id="coin-title">Bitcoin</label>
+                        <label id="coin-symbol">BTC</label>
+                        <span id="rank">Rank #1</span>
+                        <button id="favourite"><img src="./assets/icons/fav_star.png" alt="Star fav"></button>
+                    </div>
+                    <label id="price">$67,452.32</label>
+                    <label id="price-indicator">2.45% (24h)</label>
+                    <div class="kpis">
+                        <div class="info-kpi">
+                            <img src="./assets/icons/profit.png" alt="Market Cap">
+                            <div class="kpi">
+                                <label>Market Cap</label>
+                                <label id="market-cap">$1.33T</label>
+                            </div>
+                        </div>
+                        <div class="info-kpi">
+                            <img src="./assets/icons/sales-amount.png" alt="24h Volume">
+                            <div class="kpi">
+                                <label>24h Volume</label>
+                                <label id="24h-volume">$28.45B</label>
+                            </div>
+                        </div>
+                        <div class="info-kpi">
+                            <img src="./assets/icons/circular-economy.png" alt="Circulating Supply">
+                            <div class="kpi">
+                                <label>circulating Supply</label>
+                                <label id="circulating-supply">19.75 BTC</label>
+                            </div>
+                        </div>
+                        <div class="info-kpi">
+                            <img src="./assets/icons/max_supply.png" alt="Max Supply">
+                            <div class="kpi">
+                                <label>Max Supply</label>
+                                <label id="max-supply">21.00M BTC</label>
+                            </div>
+                        </div>
+                        <div class="info-kpi">
+                            <img src="./assets/icons/high_performance.png" alt="All Time High">
+                            <div class="kpi">
+                                <label>All-Time High</label>
+                                <label id="all-time-high">$73,750.07</label>
+                            </div>
+                        </div>
+                        <div class="info-kpi">
+                            <img src="./assets/icons/high_performance.png" alt="All Time Low">
+                            <div class="kpi">
+                                <label>All-Time Low</label>
+                                <label id="all-time-low">$67.81</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph">
+                    <img id="graph" width="820px" height="390px" src="./assets/icons/light_graph.png" alt="">
+                </div>
+            </div>
+            <div class="top-list">
+                <p>Top cryptocurrencies</p>
+                <table>
+                    <thead>
+                        <tr id="head">
+                            <td>#</td>
+                            <td>Coin</td>
+                            <td>Prices</td>
+                            <td>24h Change</td>
+                            <td>Market Cap</td>
+                            <td>24h Volume</td>
+                            <td>Circulating Supply</td>
+                            <td>Last 7 Days</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
